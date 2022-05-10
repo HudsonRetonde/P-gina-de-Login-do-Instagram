@@ -1,19 +1,104 @@
 * {
     margin: 0;
-    padding: 0;
+    padding: 0;    
 }
 
 .container-embrulho {
     display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgb(250, 249, 249);
+}
+
+.celulares {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 65vh;
+    border: solid red;
+}
+
+.celular-fundo {    
+    border: solid blue;
+    
+}
+
+.celular-back img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 500px;
+    height: 100vh;
+    position: absolute;
+}
+
+.celular-back-tela img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 490px;
+    height: 90vh;
+    position: absolute;
+    padding-top: 13px;
+    padding-left: 56px;
+}
+
+.celular-frente {
+    display: flex;
+    width: 500%;
+    height: 90vh;    
+}
+
+.celular-principal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 80vh;           
+}
+
+.celular-frente img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 500px;
+    height: 94vh;
+    position: absolute;
+}
+    
+.celular-frente-tela img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 390px;
+    height: 75vh;
+    position: absolute;
+}
+
+.container-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.container-cadastro {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border: solid rgb(172, 172, 172) 0.5px;    
+    padding: 5px;
+    background-color: #fff;    
+    width: 100%;
+    height: 65vh;
 }
 
 .box {
     display: flex;
     align-items: center;
     flex-direction: column;
-    max-width: 50 px;
-    max-height: 100vh;
-    border: solid red;
+    width: 85%;
+    max-height: 100vh;    
 }
 
 .instagram-logo {
@@ -21,10 +106,53 @@
     align-items: center;
     justify-content: center;
     padding-top: 40px;
+    padding-bottom: 40px;    
+    background-color: #fff;
 }
 
 .instagram-logo img {
     max-width: 200px;
+}
+
+form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #fff;     
+}
+
+.email {
+    background-color: white;
+    margin-bottom: 10px;
+    background-color: rgb(250, 249, 249);
+    border-radius: 2px;
+}
+
+input {
+    background-color: rgb(250, 249, 249);
+    width: 260px;
+    height: 30px;
+    outline: none;
+    border: solid rgb(172, 172, 172) 0.5px;      
+    border-radius: 4px;    
+    font-size: 11px;
+}
+
+.senha {
+    background-color: white;
+    margin-bottom: 10px; 
+    border: none;       
+}
+
+.button {    
+    width: 260px;
+    height: 30px;
+    margin-bottom: 10px;
+    background-color: rgba(157, 251, 241, 0.846);
+    color: #fff;    
+    border-radius: 4px;
+    outline: none;
+    border: none;    
 }
 
 hr {
@@ -36,13 +164,22 @@ hr {
 .conta-face {
     display: flex;
     justify-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
+    flex-direction: column;
     padding-top: 10px;
+}
 
+.conta-face a {
+    display: flex;
+    justify-items: center;
+    justify-content: space-around;
+    color: rgb(34, 34, 190);
+    font-size: 15px;
+    margin-bottom: 10px;
 }
 
 .conta-face img {
-    max-width: 50px;
+    max-width: 15px;
 }
 
 .conta-face span {
@@ -51,28 +188,35 @@ hr {
 
 .box-cadastro {
     display: flex;
-    justify-items: center;
-    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    border: solid rgb(172, 172, 172) 0.5px;    
+    background-color: #fff;    
+    width: 104%;
+    height: 8vh;
+    margin-top: 10px;
 }
 
 .box-cadastro span {
-    padding: 5px;
+    align-items: center;
+    margin-top: 15px;
 }
 
 .app {
     display: flex;
     justify-items: center;
     justify-content: center;
-    padding: 10px;
+    padding: 15px;    
 }
 
 .app-img {
-    display: flex;    
+    
     padding-right: 05px;
+    
 }
 
 .app-img img {
+
     max-width: 120px;
     max-height: 50px;
-
 }
