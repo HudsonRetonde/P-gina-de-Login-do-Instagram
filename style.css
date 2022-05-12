@@ -1,80 +1,99 @@
 * {
     margin: 0;
-    padding: 0;    
+    padding: 0;  
+    font-family: sans-serif;  
 }
 
 .container-embrulho {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
     background-color: rgb(250, 249, 249);
 }
 
 .celulares {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 50%;
-    height: 65vh;
-    border: solid red;
+   width: 400px;
+   height: 100vh;
+   box-sizing: border-box;
 }
 
-.celular-fundo {    
-    border: solid blue;
-    
+.celular-fundo {
+    display: flex;
+    align-items: center;  
+    justify-content: center;
+    flex-direction: column;  
+    width: 410px;
+    height: 95vh;
+    margin-right: 100px;
 }
 
-.celular-back img {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    max-width: 500px;
-    height: 100vh;
+.celular-back {
+    box-sizing: border-box;
+    width: 310px;
+    height: 80vh;
+    position: relative;
+    margin-bottom: 25px;
+}
+
+.celular-back img {       
+    width: 310px;
+    height: 80vh;          
+}
+
+.celular-back-tela {    
+    width: 196px;
+    height: 71vh;  
     position: absolute;
+    margin-bottom: 25px;
 }
 
-.celular-back-tela img{
+.celular-back-tela img { 
+    display: flex;  
+    justify-content: center;    
+    width: 196px;
+    height: 71vh;  
+    position: absolute;      
+}
+
+.celular-principal {   
     display: flex;
     align-items: center;
-    justify-content: center;
-    max-width: 490px;
-    height: 90vh;
-    position: absolute;
-    padding-top: 13px;
-    padding-left: 56px;
+    justify-content: center; 
+    width: 100px;
+    height: 80vh; 
+    position: absolute;           
 }
 
 .celular-frente {
-    display: flex;
-    width: 500%;
-    height: 90vh;    
-}
-
-.celular-principal {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100px;
-    height: 80vh;           
-}
-
-.celular-frente img {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    max-width: 500px;
-    height: 94vh;
+    box-sizing: border-box;
+    width: 310px;
+    height: 80vh;
     position: absolute;
-}
+    margin-top: 120px;
+    margin-left: 100px;
     
-.celular-frente-tela img {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    max-width: 390px;
-    height: 75vh;
-    position: absolute;
 }
+
+.celular-frente-tela {    
+    box-sizing: border-box;
+    width: 310px;
+    height: 80vh;
+    position: absolute;
+    margin-top: 146px;
+    margin-left: 210px;    
+}
+
+.celular-frente img {    
+    width: 310px;
+    height: 80vh;
+    position: absolute;   
+} 
+    
+.celular-frente-tela img {    
+    width: 200px;
+    height: 74vh; 
+    position: absolute; 
+}    
 
 .container-box {
     display: flex;
@@ -144,6 +163,14 @@ input {
     border: none;       
 }
 
+#cadastro::placeholder {
+    color: rgb(122, 122, 116);
+}
+
+#senha::placeholder {
+    color: rgb(122, 122, 116);
+}
+
 .button {    
     width: 260px;
     height: 30px;
@@ -155,16 +182,21 @@ input {
     border: none;    
 }
 
-hr {
+.line-ou {
     display: flex;
     align-items: center;
     justify-content: space-around;
+    color: rgb(122, 122, 116);
+}
+
+hr {
+    width: 110px;
 }
 
 .conta-face {
     display: flex;
     justify-items: center;
-    justify-content: space-between;
+    justify-content: center;
     flex-direction: column;
     padding-top: 10px;
 }
@@ -172,7 +204,7 @@ hr {
 .conta-face a {
     display: flex;
     justify-items: center;
-    justify-content: space-around;
+    justify-content: center;
     color: rgb(34, 34, 190);
     font-size: 15px;
     margin-bottom: 10px;
@@ -180,6 +212,7 @@ hr {
 
 .conta-face img {
     max-width: 15px;
+    margin-right: 5px;
 }
 
 .conta-face span {
@@ -209,14 +242,11 @@ hr {
     padding: 15px;    
 }
 
-.app-img {
-    
-    padding-right: 05px;
-    
+.app-img {    
+    padding-right: 05px;    
 }
 
 .app-img img {
-
     max-width: 120px;
     max-height: 50px;
 }
